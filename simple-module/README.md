@@ -15,17 +15,6 @@ simple-module is simply relies on existing modules provide the camera vision and
 - Add the sensor as a dependency
 - Update the following attribute template  to configure this model:
 
-```json
-{
-  "camera": <string>,
-  "detection_confidence": <float>,
-  "sensor": <string>,
-}```
-
-Camera is the name of a camera component
-Sensor is the name of a vision sensor which we want to choose
-detection_confidence is the certainty between 0 and 1 that will determine if a person is recognized.
-
  
 #### Attributes
 
@@ -33,14 +22,17 @@ The following attributes are available for this model:
 
 | Name          | Type   | Inclusion | Description                |
 |---------------|--------|-----------|----------------------------|
-| `attribute_1` | float  | Required  | Description of attribute 1 |
-| `attribute_2` | string | Optional  | Description of attribute 2 |
+| `camera` | string  | Required  | camera is the name of a camera component running on your machine which you want to use |
+| `sensor` | string | Required  | sensor Camera is the name of the vision component running on your machine which you want to use|
+| `detection_confidence` | fload | Optional  | between 0 and 1, certainty accepted to determine a person is in frame |
+
 
 #### Example Configuration
 
 ```json
 {
-  "attribute_1": 1.0,
-  "attribute_2": "foo"
+  "camera": <string>,
+  "detection_confidence": <float>,
+  "sensor": <string>,
 }
 ```
