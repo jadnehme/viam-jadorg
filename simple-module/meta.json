@@ -1,0 +1,17 @@
+{
+  "$schema": "https://dl.viam.dev/module.schema.json",
+  "module_id": "jadorg:simple-module",
+  "visibility": "private",
+  "url": "",
+  "description": "Modular sensor component: simple-detection",
+  "models": [
+    {
+      "api": "rdk:component:sensor",
+      "model": "jadorg:simple-module:simple-detection",
+      "short_description": "Provide a short (100 characters or less) description of this model here",
+      "markdown_link": "README.md#model-jadorgsimple-modulesimple-detection"
+    }
+  ],
+  "entrypoint": "./run.sh",
+  "first_run": ""
+}
